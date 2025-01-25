@@ -2,13 +2,13 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Form Registrasi</title>
+    <title>Edit Profil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style="background-color: blue;" class="container mt-5">
+<body class="container mt-5">
     <div class="card shadow-sm p-4">
-        <h1 class="text-center">Create account</h1>
-        <form action="/registerProcess" method="post">
+        <h1 class="text-center">Edit Profil</h1>
+        <form action="updateProfile" method="post">
             <?= csrf_field() ?>
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
@@ -53,7 +53,7 @@
                     <input type="password" name="confirm_password" class="form-control" placeholder="Ulangi password baru">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Create Account</button>
+            <button type="submit" class="btn btn-primary w-100">Perbarui Profil</button>
         </form>
     </div>
 </body>
